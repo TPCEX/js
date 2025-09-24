@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=srip, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+    // exerice jour 1 variable
+        let prenom = 'tob'
+        let age = '19 ans'
+        let etudiant = true
+    console.log(prenom,age,etudiant)
+
+    // exercice jour 2 mini calculatrice
+        let A = prompt('entrez nombre 1')
+        let B = prompt('entrez nombre 2')
+        let somme = Number(A) + Number(B)
+        let difference = Number(A) - Number(B)
+        let produit = A*B
+        let quotient = A / B
+        console.log (somme,difference,produit,quotient)
+
+    // exercice jour 3 premier script logique mineur/majeur
+        age = Number(prompt('entrez votre age'))
+        if (age < 18 ){
+        console.log('vous êtes mineur')
+
+        }else{
+            console.log('vous êtes majeur')
+        }
+    // exercice jour 4 console et type 
+        let note = "15"
+        console.log(typeof(note))
+        note = Number(note)
+        console.log(typeof(note))
+
+    // exercice jour 5 mini projet IMC
+        let poids= Number(prompt('entrez votre poids (kg)'))
+        let taille= Number(prompt('entrez votre taille (Cm)'))
+        //conversion en m
+        let conv = Number(100)
+        taille = taille/conv
+        // creation du carrée
+        let taillecarre=taille*taille
+        let IMC = poids / taillecarre
+        alert(IMC)
+
+    // exercice jour 6 revision leger script
+        
+        prenom = prompt('entrez votre nom')
+        age= prompt('quel est votre age')
+        let pays = prompt('quel est votre pays')
+        alert(`Je m'appelle ${prenom} j'ai ${age} ans et je viens de ${pays}`)
+
+    // exercice jour 7 for of et for in 
+
+    let etudiants = [
+  { nom: "Paul", age: 19, pays: "Côte d'Ivoire" },
+  { nom: "Marie", age: 20, pays: "France" },
+  { nom: "Ali", age: 18, pays: "Maroc" }
+    ];
+
+    for(let etudiant of etudiants){ 
+    console.log("--------ETUDIANTS----------")
+
+    for( key in etudiant){
+    console.log(key + ":" + etudiant[key])
+    }
+    }
+    */
+   
+    // mini jeux inventaire 
+
+    let inventaire = [
+  { nom: "Épée", type: "Arme", valeur: 150 },
+  { nom: "Potion de soin", type: "Consommable", valeur: 50 },
+  { nom: "Bouclier", type: "Armure", valeur: 100 }
+];
+        for(box of inventaire){
+            console.log("--------INVENTAIRE---------")
+            for(key in box){
+                console.log(key + ":" + box[key])
+            }
+        }
+    
+    let pays = [
+        "Côte d'Ivoire",
+         "France",
+          "Canada", 
+          "Japon"
+    ]
+console.log(pays[0],pays[3])
+
+        let nombres = [2, 4, 6, 8]
+        nombres[1] = 10
+        nombres.push(12)
+         nombres.pop(nombres)
+        console.log(nombres)
+
+    let fruits = ["mangue", "pomme", "banane", "kiwi"]
+    for(i = 0 ; i < fruits.length ; i++ ){
+        console.log(fruits[i])
+    }
+     for(fruit of fruits){
+        console.log(fruit)
+     }  
+       
+    </script>
+</body>
+</html>

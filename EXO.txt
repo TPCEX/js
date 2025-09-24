@@ -1,0 +1,118 @@
+📌 Mois 1 : Bases solides en JavaScript
+
+Semaine 1 : Fondations
+
+Variables (let, const, var)
+
+Types de données (string, number, boolean, null, undefined, object, array)
+
+Opérateurs (+ - * / %, ==, ===, &&, ||, !)
+⚡ Exercice : créer une mini-calculatrice en console.
+
+Semaine 2 : Contrôle du flux
+
+Conditions : if, else if, else, switch
+
+Boucles : for, while, for...of, for...in
+⚡ Exercice : afficher les nombres pairs/impairs de 1 à 100.
+
+Semaine 3 : Fonctions et Scope
+
+Fonctions classiques et fléchées
+
+Paramètres, valeur de retour
+
+Scope local/global
+⚡ Exercice : écrire une fonction qui calcule la factorielle d’un nombre.
+
+Semaine 4 : Tableaux & Objets
+
+Méthodes : map, filter, reduce, forEach
+
+Objets, accès aux propriétés
+⚡ Exercice : gérer une liste de tâches (todo list en console).
+
+📌 Mois 2 : JS moderne + DOM + Asynchrone
+
+Semaine 5 : DOM
+
+getElementById, querySelector
+
+Modifier texte/style, créer/supprimer des éléments
+
+Événements (addEventListener)
+⚡ Exercice : bouton qui ajoute/supprime des éléments dans une page.
+
+Semaine 6 : Asynchrone
+
+setTimeout, setInterval
+
+Promises (.then, .catch)
+
+async/await
+
+Fetch API
+⚡ Exercice : afficher des données depuis une API publique (ex : JSONPlaceholder).
+
+Semaine 7 : ES6+
+
+Déstructuration ({} et [])
+
+Spread/rest ...
+
+Classes et objets orientés objet
+
+Modules (import/export)
+⚡ Exercice : créer une classe User avec méthodes pour gérer un profil.
+
+Semaine 8 : Projet en JS pur
+
+Faire une petite todo list web avec ajout, suppression, sauvegarde (localStorage).
+
+📌 Mois 3 : Introduction à React
+
+Semaine 9 : Premiers pas
+
+Qu’est-ce que React, installation (Vite ou Create React App)
+
+JSX, composants, props
+⚡ Exercice : créer un composant Bienvenue qui prend ton prénom en props.
+
+Semaine 10 : State & Events
+
+useState
+
+Gérer les événements (click, input)
+⚡ Exercice : compteur + formulaire qui affiche ce que tu tapes.
+
+Semaine 11 : useEffect & API
+
+useEffect (cycle de vie simplifié)
+
+Fetch API avec React
+⚡ Exercice : afficher une liste d’utilisateurs venant d’une API.
+
+Semaine 12 : Projet React simple
+
+Mini Todo list en React (ajout/suppression, persistance avec localStorage).
+
+📌 Mois 4 : Niveau confirmé en React
+
+Semaine 13 : Routing
+
+React Router : navigation entre pages
+
+Semaine 14 : Formulaires avancés
+
+Gestion des formulaires complexes
+
+Validation des inputs
+
+Semaine 15 : Optimisation
+
+useContext (partage de state global)
+
+Découpage en composants réutilisables
+
+Semaine 16 : Projet React avancé
+👉 Exemple : un mini-dashboard personnel (afficher tes revenus/dépenses, comme ton idée de gestion financière).
