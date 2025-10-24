@@ -106,8 +106,46 @@ console.log(pays[0],pays[3])
     }
      for(fruit of fruits){
         console.log(fruit)
-     }  
+     } 
+// fonctions fetch  
        
+    const double = (O)=> O + O;
+    let T = Number(prompt("entrer un nombre"))
+    console.log(double(T))
+
+    const IMC = (P,T) => P/T*T;
+    let poids = Number(prompt("entrer poids"))
+    let taille= Number(prompt("entrer taille"))
+    console.log(IMC(poids,taille))
+
+// destructuration d'objets ou de tableau
+
+let etudiant = { nom: "Alice", age: 20, pays: "CI" };
+let {nom , age }= etudiant;
+console.log(nom,age)
+
+// spread et rest 
+ tab =[1,2,3,4]
+ tab2 = [...tab,5,6,7]
+ console.log(tab2)
+
+ function somme(...nombres){
+     return   nombres.reduce((a,b)=> a + b, 0);
+       
+ }
+ console.log(somme(1, 1, 1, 1, 1, 1, 1, 1));
+
+ function lapluie(fete,beautemps){
+    console.log("je vais faire le fête")
+    beautemps();
+ }
+ let ev = prompt('entrez la fête')
+ lapluie( ev , ()=>{
+    console.log("allons s'amuser au"+ ev)
+ })
+
+
+
     </script>
 </body>
 </html>
