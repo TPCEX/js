@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test DOM</title>
+  </head>
+  <body>
+    <h1 id="titre">Bienvenue LEFT</h1>
+    <button id="btn">Changer le texte</button>
+
+    <script>
+      const titre = document.getElementById("titre");
+      const bouton = document.getElementById("btn");
+
+      bouton.addEventListener("click", function() {
+        titre.innerText = "Texte changé par JavaScript 💪";
+      });
+    </script>
+  </body>
+</html>
