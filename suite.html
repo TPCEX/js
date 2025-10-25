@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Test DOM</title>
-  </head>
-  <body>
-    <h1 id="titre">Bienvenue LEFT</h1>
-    <button id="btn">Changer le texte</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Dynamique</title>
+</head>
+<body>
+  <h2>📝 Ma To-Do List</h2>
 
-    <script>
-      const titre = document.getElementById("titre");
-      const bouton = document.getElementById("btn");
+  <form action="">
+    <input id="taskInput" type="text" placeholder="Écris une tâche...">
+    <button id="supp">X</button>
+    <button id="addBtn">Ajouter</button>
+  </form>
 
-      bouton.addEventListener("click", function() {
-        titre.innerText = "Texte changé par JavaScript 💪";
-      });
-    </script>
-  </body>
+  <ul id="taskList"></ul>
+
+  <button id="clearBtn">Tout effacer</button>
+
+  <script>
+    const sai = document.getElementById("taskInput")
+    const liste = document.getElementById("taskList")
+    const addBtn = document.getElementById("addBtn")
+    const clearBtn = document.getElementById("clearBtn")
+    const supp = document.getElementById("supp")
+    
+    addBtn.addEventListener( "click", function(event){
+      event.preventDefault()
+      let task
+      if (sai.value !== ""){
+    
+          sai.style.borderBlockColor="black"
+      task=document.createElement("li")
+      task.innerHTML=sai.value
+
+      liste.appendChild(task)
+
+      task.addEventListener("click", function() {
+  liste.removeChild(task)
+})
+      }else{
+      
+      sai.style.borderBlockColor="red"}
+
+
+
+    })
+ 
+}
+
+    supp.addEventListener("click", function(event){
+      event.preventDefault()
+      sai.value=""
+    
+    })
+
+    clearBtn.addEventListener("click", function(event){
+      event.preventDefault()
+      liste.innerHTML=""
+    })
+  
+
+    
+  </script>
+</body>
 </html>
